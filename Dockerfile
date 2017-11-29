@@ -7,6 +7,7 @@ RUN npm install -g @angular/cli@1.4.3
 
 # installing gradle:4.2.1 (java jdk8, gradl 4.2.1)
 FROM gradle:4.2.1-jdk8
+USER root
 
 # check if gradle is properly installed
 RUN echo "Testing gradle installation" && gradle --version
